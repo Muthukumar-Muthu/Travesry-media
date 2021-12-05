@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    border: thin solid black;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h1 {
+    padding: 10px;
+}
+
+.heading input[type="text"] {
+    margin: 20px;
+}
+
+form * {
+    margin: 20px;
+}
+
+ul {
+    margin: 20px;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    border: thin solid darkblue;
+    padding: 10px;
+}
+
+li:hover {
+    color: lightcoral;
+}
