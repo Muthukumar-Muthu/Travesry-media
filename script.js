@@ -10,11 +10,12 @@ ul.addEventListener("click", deleteElement);
 search.addEventListener("keyup", searchElement);
 
 function addElement(e) {
-    let data = insert.value;
-
-    ul.append(createLi(data));
-    // Delete the value inserted
-    deleteValue();
+    if (insert.value == "") {} else {
+        let data = insert.value;
+        ul.append(createLi(data));
+        // Delete the value inserted
+        deleteValue();
+    }
 }
 
 function createLi(data) {
