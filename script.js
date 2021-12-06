@@ -48,13 +48,19 @@ function deleteElement(e) {
 function searchElement(e) {
     const li = document.querySelectorAll(".list-child");
     let searchValue = e.target.value;
-    let myArray = Array.from(li);
+    // let myArray = Array.from(li);
 
+    // for (let i = 0; i < li.length; i++) {
+    //     // console.log(myArray[i].textContent);
+    //     if (searchValue === myArray[i].textContent) {
+    //         console.log(myArray[i]);
+    //         myArray[i].style.display = "flex";
+    //     } else myArray[i].style.display = "none";
+    // }
     for (let i = 0; i < li.length; i++) {
-        // console.log(myArray[i].textContent);
-        if (searchValue === myArray[i].textContent) {
-            console.log(myArray[i]);
-            myArray[i].style.display = "flex";
-        } else myArray[i].style.display = "none";
+        if (searchValue === li[i].innerText) {
+            // console.log(li[i]);
+            li[i].style.display = "flex";
+        } else li[i].style.display = "none";
     }
 }
